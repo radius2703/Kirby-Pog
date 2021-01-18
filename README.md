@@ -21,8 +21,8 @@ To do that, run this command: `pip install -r requirements.txt`<br />
   "exts": [
     "events.member",
     "imaging.slappers",
-    "imaging.micro.blur",
-    "imaging.micro.noise",
+    "imaging.blur",
+    "imaging.noise",
     "imaging.pass_it_down",
     "imaging.peppo_pet"
   ]
