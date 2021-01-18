@@ -63,7 +63,7 @@ class PassItDown(commands.Cog):
             frame, *frames = frames
 
             frame.save(pass_it, format="GIF", append_images=frames, save_all=True,
-                       duration=40, loop=0, optimize=True)
+                       duration=40, loop=0, optimize=True, disposal=2)
             pass_it.seek(0)
 
             return await ctx.send(
