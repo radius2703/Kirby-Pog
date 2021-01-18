@@ -37,9 +37,8 @@ To do that, run this command: `pip install -r requirements.txt`<br />
 * Build the docker using: `docker build -t kirby-pog .`.<br /> This step usually takes around a minute or so.
 
 * Finally run the docker with: `docker run kirby-pog`.
-<br />
+<br /><br />
 Sorry if I butchered the terminology :p
 <br />
 That should do it! Hope you have fun with the bot!
-
 If you have any suggestion/improvements, be sure to make a PR with the changes!
