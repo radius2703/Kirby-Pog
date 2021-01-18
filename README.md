@@ -1,4 +1,4 @@
-### WIP Discord bot :D
+## WIP Discord bot :D
 
 **KirbyPog is a WIP upcoming discord bot :D**
 <br />
