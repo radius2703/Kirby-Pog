@@ -51,7 +51,7 @@ def spread(image: Image, radius: float) -> Image:
     return image
 
 
-def noise(image: Image, noise_type: str, attenuate: float):
+def noise(image: Image, noise_type: str, attenuate: float) -> Image:
     if noise_type not in ("uniform", "random", "poisson", "multiplicative_gaussian", "laplacian", "gaussian",
                           "impulse"):
         noise_type = "poisson"
@@ -76,7 +76,42 @@ def shade(image: Image, azimuth: float, altitude: float) -> Image:
     return image
 
 
-# Sharpen
-def sharpen(image: Image, radius: float, sigma: float) -> Image:
-    image.sharpen(radius=radius, sigma=sigma)
+# FX
+def polaroid(image: Image) -> Image:
+    image.polaroid()
+    return image
+
+
+def sepia(image: Image, threshold: float) -> Image:
+    image.sepia_tone(threshold=threshold)
+    return image
+
+
+def charcoal(image: Image, radius: float, sigma: float) -> Image:
+    image.charcoal(radius=radius, sigma=sigma)
+    return image
+
+
+def swirl(image: Image, degree: float) -> Image:
+    image.swirl(degree=degree)
+    return image
+
+
+def flip(image: Image) -> Image:
+    image.flip()
+    return image
+
+
+def flop(image: Image) -> Image:
+    image.flop()
+    return image
+
+
+def spectrum(image: Image) -> Image:
+    image.function("sinusoid", [3, -90, 0.2, 0.7])
+    return image
+
+
+def thicc(image: Image, amount: float) -> Image:
+    image.implode(amount=-amount)
     return image

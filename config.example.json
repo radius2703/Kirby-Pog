@@ -7,6 +7,7 @@
     "imaging.blur",
     "imaging.noise",
     "imaging.pass_it_down",
-    "imaging.peppo_pet"
+    "imaging.peppo_pet",
+    "imaging.fx"
   ]
 }
