@@ -1,0 +1,12 @@
+{
+  "token": "",
+  "prefix": "k.",
+  "exts": [
+    "events.member",
+    "imaging.slappers",
+    "imaging.blur",
+    "imaging.noise",
+    "imaging.pass_it_down",
+    "imaging.peppo_pet"
+  ]
+}
