@@ -31,6 +31,16 @@ To do that, run this command: `pip install -r requirements.txt`<br />
 
 * At this step, you could either do a docker build, or run the `bot.py` file.
 
+**Steps for docker:**
+* Clone the repo, cd into the root dir of the project. A `ls` (or `dir`) should give `bot.py`, etc.
+
+* Build the docker using: `docker build -t kirby-pog .`.<br /> This step usually takes around a minute or so.
+
+* Finally run the docker with: `docker run kirby-pog`.
+
+<br />
+Sorry if I butchered the terminology :p
+
 <br />
 That should do it! Hope you have fun with the bot!
 
