@@ -41,5 +41,5 @@ To do that, run this command: `pip install -r requirements.txt`<br />
 <br /><br />
 Sorry if I butchered the terminology :p
 <br /><br />
-That should do it! Hope you have fun with the bot!
+That should do it! Hope you have fun with the bot!<br />
 If you have any suggestion/improvements, be sure to make a PR with the changes!
