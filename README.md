@@ -2,7 +2,7 @@
 
 **KirbyPog is a WIP upcoming discord bot :D**
 <br />
-I have no intentions to release this bot (yet), but I might as time goes one ^^
+I have no intentions to release this bot (yet), but I might as time goes on ^^
 
 Till now though, this bot is still a work in progress.
 
