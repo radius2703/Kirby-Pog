@@ -77,3 +77,5 @@ class PassItDown(commands.Cog):
     async def error(self, ctx: commands.Context, error):
         if isinstance(error, commands.errors.PartialEmojiConversionFailure):
             return await ctx.send("Enter a valid custom emote.")
+        else:
+            raise error

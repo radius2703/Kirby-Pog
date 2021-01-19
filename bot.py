@@ -37,7 +37,7 @@ class Kirby(commands.AutoShardedBot):
         super().__init__(
             command_prefix=self.get_prefix, owner_id=420244167726333953,
             activity=discord.Streaming(name="kirby!", url="https://twitch.tv/kirby_your_mom/"),
-            reconnect=True, intents=discord.Intents.all()
+            reconnect=True, intents=discord.Intents.all(), case_insensitive=True
         )
         self.started_at = time.time()
 
