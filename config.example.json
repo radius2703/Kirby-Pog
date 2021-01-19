@@ -1,6 +1,6 @@
 {
   "token": "",
-  "prefix": "k.",
+  "prefix": "k-",
   "exts": [
     "events.member",
     "imaging.slappers",
