@@ -17,7 +17,7 @@ To do that, run this command: `pip install -r requirements.txt`<br />
 ```json
 {
   "token": "<token goes here>",
-  "prefix": "k.",
+  "prefix": "k-",
   "exts": [
     "events.member",
     "imaging.slappers",
