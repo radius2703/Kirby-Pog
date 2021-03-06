@@ -48,7 +48,7 @@ class Pet(commands.Cog):
             profile = Image.open(BytesIO(await emote.url.read())).convert("RGBA")
         pet = BytesIO()
         frames = []
-        for i, dim in zip(range(5), self.dim):
+        for i, dim in zip(range(5), self.dim):  # enumerate...?
             b = blank.copy().convert("RGBA")
             hand = Image.open(f"./assets/peppo_pet/{i}.png").convert("RGBA")
             image = profile.resize(dim, Image.LANCZOS)
