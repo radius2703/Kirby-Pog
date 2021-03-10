@@ -71,7 +71,9 @@ class GuildEvent(commands.Cog):
 
         member_name = self._process_name(member.name)
         filtered_name = self._filter_letters(member_name)
+        
         channel = [c for c in member.guild.channels if isinstance(c, discord.TextChannel)]
+        channel.sort(key=lambda c: c.position)
 
         bg = Image.open("./assets/on_member_join/bg.png")
         profile = Image.open(BytesIO(await member.avatar_url.read())).resize((256, 256)).convert("RGBA")
@@ -107,7 +109,6 @@ class GuildEvent(commands.Cog):
         bg.save(image, format="PNG")
         image.seek(0)
 
-        return await channel[0].send(embed=discord.Embed(
-            description=self._trans("", member)
-        ).set_image(url="attachment://welcome.png"),
-            file=discord.File(filename="welcome.png", fp=image))
+        return await channel[0].send(
+            file=discord.File(filename="welcome.png", fp=image)
+        )
