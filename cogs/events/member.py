@@ -53,7 +53,7 @@ class GuildEvent(commands.Cog):
 
     @staticmethod
     def _filter_letters(name: str) -> str:
-        return ''.join([l for l in name if l not in "gjpqy"]) + "o"  # Safe guard
+        return ''.join(l for l in name if l not in "gjpqy") + "o"  # Safe guard
 
     @staticmethod
     def _trans(greeting: str, member: discord.Member):
