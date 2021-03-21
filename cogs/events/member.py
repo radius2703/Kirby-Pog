@@ -46,7 +46,7 @@ class GuildEvent(commands.Cog):
 
     @staticmethod
     def _process_name(name: str) -> str:
-        valid_name = ''.join([l for l in name if l.isalnum() or " "])
+        valid_name = ''.join(l for l in name if l.isalnum() or " ")
         if len(valid_name) > 17 or len(valid_name) != len(name):
             valid_name = valid_name[:17] + "..."
         return valid_name
